@@ -10,3 +10,8 @@ class HelloWorldSerializer(serializers.ModelSerializer):
             'description',
         )
         model = models.HelloWorld
+
+
+class NoModelTestSerializer(serializers.Serializer):
+    title = serializers.CharField(max_length=255)
+    comments = serializers.CharField(max_length=255)
