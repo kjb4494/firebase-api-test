@@ -1,6 +1,5 @@
 from functools import wraps
-from smapi.lib.exceptions import ParamsBadRequestError
-from rest_framework.response import Response
+from rest_framework.exceptions import ParseError
 
 
 def requires_params(params):
@@ -9,8 +8,9 @@ def requires_params(params):
         def decorator(*args, **kwargs):
             for param in params:
                 if args[1].GET.get(param) is None:
-                    results = ParamsBadRequestError().get_full_details()
-                    return Response(results)
+                    raise ParseError(
+                        'No value given for one or more required parameters error.(' + ', '.join(params) + ')'
+                    )
             order = func(*args, **kwargs)
             return order
         return decorator
