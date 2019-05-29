@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7dbc90-e5c2-4562-b4de-eb6db1d36257" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase_api_test/smapi/lib/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase_api_test/smapi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_api_test/smapi/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -26,25 +25,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/authentication.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,22 +64,22 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/authentication.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/models.py" />
-        <option value="$PROJECT_DIR$/firebase_api_test/smapi/lib/dialogflow_process.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/firebase_api_test/settings.py" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/firebase_api_test/smapi/urls.py" />
-        <option value="$PROJECT_DIR$/firebase_api_test/smapi/serializers.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/lib/exceptions.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/lib/decorator.py" />
+        <option value="$PROJECT_DIR$/firebase_api_test/smapi/serializers.py" />
+        <option value="$PROJECT_DIR$/firebase_api_test/smapi/urls.py" />
+        <option value="$PROJECT_DIR$/firebase_api_test/smapi/lib/dialogflow_process.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py" />
         <option value="$PROJECT_DIR$/firebase_api_test/smapi/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="458" />
+    <option name="x" value="338" />
     <option name="y" value="23" />
-    <option name="width" value="1380" />
+    <option name="width" value="1500" />
     <option name="height" value="976" />
   </component>
   <component name="ProjectView">
@@ -185,7 +172,7 @@
       <workItem from="1558920669278" duration="49000" />
       <workItem from="1559032896372" duration="1525000" />
       <workItem from="1559094472817" duration="199000" />
-      <workItem from="1559097453651" duration="6449000" />
+      <workItem from="1559097453651" duration="10129000" />
     </task>
     <task id="LOCAL-00001" summary="Add admin db viewer">
       <created>1558078965524</created>
@@ -215,17 +202,31 @@
       <option name="project" value="LOCAL" />
       <updated>1559107528046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="요구 파라미터 검증 데코레이터 구현 완료">
+      <created>1559108344240</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559108344241</updated>
+    </task>
+    <task id="LOCAL-00006" summary="필요없는거 지움">
+      <created>1559109261295</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559109261295</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22645000" />
+    <option name="totallyTimeSpent" value="26325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="458" y="23" width="1380" height="976" extended-state="0" />
+    <frame x="338" y="23" width="1500" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14499253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19135803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,7 +258,8 @@
     <MESSAGE value="no model data rest api" />
     <MESSAGE value="다이얼로그플로우 연동 완료" />
     <MESSAGE value="요구 파라미터 검증 데코레이터 구현 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="요구 파라미터 검증 데코레이터 구현 완료" />
+    <MESSAGE value="필요없는거 지움" />
+    <option name="LAST_COMMIT_MESSAGE" value="필요없는거 지움" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/firebase_api_test/drf_firebase_auth/models.py" />
@@ -353,13 +355,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/urls.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/rest_framework/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#35#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -373,30 +379,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/rest_framework/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/dialogflow_process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -410,29 +406,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/exceptions.py">
+    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#35#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase_api_test/smapi/lib/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
