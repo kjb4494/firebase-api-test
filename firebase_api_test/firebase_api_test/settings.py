@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv, find_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -147,3 +148,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 SCOPE_NAME = 'smbot'
+
+ENV_FILE = find_dotenv()
+if ENV_FILE:
+    load_dotenv(ENV_FILE)
+
+DLF_LANGUAGE_CODE = os.environ.get('DLF_LANGUAGE_CODE')
+DLF_PROJECT_ID = os.environ.get('DLF_PROJECT_ID')
