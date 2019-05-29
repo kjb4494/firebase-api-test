@@ -6,7 +6,7 @@ _language_code = settings.DLF_LANGUAGE_CODE
 _project_id = settings.DLF_PROJECT_ID
 
 
-def _pave_dlf_dictionary(raw_dict):
+def _pave_dlf_dict(raw_dict):
     return {
         'fulfillment_text': raw_dict.get('fulfillmentText'),
         'fulfillment_messages': raw_dict.get('fulfillmentMessages'),
@@ -22,7 +22,7 @@ def detect_intent_texts(session_id, texts):
     session_client = dialogflow.SessionsClient()
 
     session = session_client.session_path(_project_id, session_id)
-    print('Session path: {}\n'.format(session))
+    # print('Session path: {}\n'.format(session))
 
     text_input = dialogflow.types.TextInput(
         text=texts,
@@ -37,4 +37,4 @@ def detect_intent_texts(session_id, texts):
         query_input=query_input
     )
 
-    return _pave_dlf_dictionary(MessageToDict(response.query_result))
+    return _pave_dlf_dict(MessageToDict(response.query_result))

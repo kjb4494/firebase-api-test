@@ -9,7 +9,7 @@ def requires_params(params):
             for param in params:
                 if args[1].GET.get(param) is None:
                     raise ParseError(
-                        'No value given for one or more required parameters error.(' + ', '.join(params) + ')'
+                        'No value given for one or more required parameters error.(required: ' + ', '.join(params) + ')'
                     )
             order = func(*args, **kwargs)
             return order
