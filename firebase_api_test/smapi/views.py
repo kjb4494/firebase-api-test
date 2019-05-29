@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from smapi import models
 from . import serializers
 from smapi.lib.dialogflow_process import detect_intent_texts
+from smapi.lib.decorators import requires_params
 import hashlib
 
 
@@ -28,9 +29,9 @@ class NoModelTest(views.APIView):
 
 
 class SmbotTextQuery(views.APIView):
+    @requires_params(['query_text'])
     def get(self, request):
-        query_text = request.GET.get('query_text')
         session_id = hashlib.md5(request.META.get('HTTP_AUTHORIZATION').encode('utf-8')).hexdigest()
-        res = detect_intent_texts(session_id, query_text)
+        res = detect_intent_texts(session_id, request.GET.get('query_text'))
         results = serializers.DialogflowResponse(res, many=False).data
         return Response(results)
